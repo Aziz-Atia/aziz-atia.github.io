@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadia Mashiat | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="theme-color" content="#2e8b57">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-green">
+    <!-- Theme Selector -->
+    <div class="theme-selector">
+        <select id="themeSelect">
+            <option value="theme-green">Green Theme</option>
+            <option value="theme-blue">Blue Theme</option>
+            <option value="theme-purple">Purple Theme</option>
+            <option value="theme-orange">Orange Theme</option>
+            <option value="theme-red">Red Theme</option>
+        </select>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#" class="rise-underline">
+                        <img src="images/favicon/favicon-32x32.png" alt="Nadia Mashiat" class="nav-logo-img">
+                        
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about" class="rise-underline">About</a></li>
+                    <li><a href="#education" class="rise-underline">Education</a></li>
+                    <li><a href="#experience" class="rise-underline">Experience</a></li>
+                    <li><a href="#skills" class="rise-underline">Skills</a></li>
+                    <li><a href="#projects" class="rise-underline">Projects</a></li>
+                    <li><a href="#contact" class="rise-underline">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="slide-in-heading">Hi, I'm <span class="highlight">Nadia Mashiat</span></h1>
+                    <h2>Development Professional & Educator</h2>
+                    <p>Versatile professional with a background in development studies and education. 
+                    Experienced in environmental advocacy, disaster management, and sustainable development.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary btn-shine tilt-effect glow-on-hover">Contact Me</a>
+                        <a href="#projects" class="btn btn-secondary tilt-effect glow-on-hover">View My Work</a>
+                    </div>
+                </div>
+                <div class="hero-image img-hover-zoom">
+                    <img src="images/profile.png" alt="Nadia Mashiat">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-cards stagger-fade-in">
+                <div class="edu-card card-hover-effect glow-on-hover">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Master of Development Studies (MDS)</h3>
+                    <p>North South University</p>
+                    <p>Ongoing</p>
+                </div>
+                <div class="edu-card card-hover-effect glow-on-hover">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Bachelor of Education (B.Ed)</h3>
+                    <p>IER (Institute Of Education & Research)</p>
+                    <p>University of Chittagong, 2022</p>
+                    <p>CGPA: 3.17 out of 4.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card-hover-effect glow-on-hover">
+                        <h3>Assistant Teacher (Intern)</h3>
+                        <h4>Bangladesh Mahila Samiti Girl's High School</h4>
+                        <p class="timeline-date">01/2022 - 03/2022</p>
+                        <ul>
+                            <li>Collaborated with lead teachers to create and implement lesson plans</li>
+                            <li>Maintained an organized learning environment for student comprehension</li>
+                            <li>Provided ongoing support to students using adaptive teaching techniques</li>
+                            <li>Participated in student performance evaluations and assessments</li>
+                            <li>Facilitated parent-teacher communication and progress insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Competencies</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container stagger-fade-in">
+                <div class="skills-category">
+                    <h3 class="rise-underline">Core Competencies</h3>
+                    <div class="skills-list">
+                        <span>Project Management</span>
+                        <span>Environmental Advocacy</span>
+                        <span>Disaster Management</span>
+                        <span>Curriculum Development</span>
+                        <span>Workshop Facilitation</span>
+                        <span>Event Coordination</span>
+                        <span>Cross-Cultural Collaboration</span>
+                        <span>Community Development</span>
+                        <span>Research and Analysis</span>
+                        <span>Program Evaluation</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="rise-underline">Tools & Technology</h3>
+                    <div class="skills-list">
+                        <span>STATA</span>
+                        <span>MS Office</span>
+                        <span>Google Docs</span>
+                        <span>Email Management</span>
+                        <span>Data Analysis</span>
+                        <span>Education Technologies</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="rise-underline">Soft Skills</h3>
+                    <div class="skills-list">
+                        <span>Effective Communication</span>
+                        <span>Team Collaboration</span>
+                        <span>Problem-Solving</span>
+                        <span>Critical Thinking</span>
+                        <span>Leadership</span>
+                        <span>Adaptability</span>
+                        <span>Time Management</span>
+                        <span>Creativity</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="rise-underline">Languages</h3>
+                    <div class="skills-list">
+                        <span>English (Fluent)</span>
+                        <span>Bengali (Native)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Activities Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects & Activities</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid stagger-fade-in">
+                <div class="project-card card-hover-effect tilt-effect glow-on-hover">
+                    <div class="tilt-effect-inner">
+                        <div class="project-icon"><i class="fas fa-globe-asia"></i></div>
+                        <h3>JENESYS Program in Japan (2023)</h3>
+                        <p>Represented Bangladesh in international cooperation and cultural exchange</p>
+                        <p>Visited a waste management project in Hakuba, Japan</p>
+                    </div>
+                </div>
+                <div class="project-card card-hover-effect tilt-effect glow-on-hover">
+                    <div class="tilt-effect-inner">
+                        <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>12th South Asia Policy Network Conference</h3>
+                        <p>Green Growth (World Bank & BIGD), 2022</p>
+                        <p>Provided insights into sustainable development policies</p>
+                    </div>
+                </div>
+                <div class="project-card card-hover-effect tilt-effect glow-on-hover">
+                    <div class="tilt-effect-inner">
+                        <div class="project-icon"><i class="fas fa-child"></i></div>
+                        <h3>Environmental Integration in Early Childhood Development</h3>
+                        <p>Webinar: "Growing Hearts, Hands & Minds", 2020</p>
+                    </div>
+                </div>
+                <div class="project-card card-hover-effect tilt-effect glow-on-hover">
+                    <div class="tilt-effect-inner">
+                        <div class="project-icon"><i class="fas fa-pen"></i></div>
+                        <h3>National Writing & Art Competition</h3>
+                        <p>1st Runner-up, English Essay Writing (2020)</p>
+                        <p>Manusher Jonno Foundation & UKAid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Workshops Section -->
+    <section class="training" id="training">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training & Workshops</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="training-grid stagger-fade-in">
+                <div class="training-card card-hover-effect glow-on-hover">
+                    <h3>Certificate Course in Academic Research</h3>
+                    <p>Bangladesh Scholarship School | 2021</p>
+                    <p>Developed proficiency in literature review, data analysis, and academic writing</p>
+                </div>
+                <div class="training-card card-hover-effect glow-on-hover">
+                    <h3>Digital Masterclass on Thesis Writing</h3>
+                    <p>Bangladesh Scholarship Squad | 2021</p>
+                    <p>Refined skills in structuring research projects effectively</p>
+                </div>
+                <div class="training-card card-hover-effect glow-on-hover">
+                    <h3>Digital Masterclass in Finance</h3>
+                    <p>Bangladesh Scholarship Squad | 2020</p>
+                    <p>Gained insights into the intersection of finance and technology</p>
+                </div>
+                <div class="training-card card-hover-effect glow-on-hover">
+                    <h3>Disaster Management Risk Reduction Program</h3>
+                    <p>Bangladesh Red Cross Society | 2014</p>
+                    <p>Developed skills for disaster response and preparedness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info stagger-fade-in">
+                    <div class="contact-card card-hover-effect glow-on-hover">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Phone</h3>
+                        <p>+8801919415100</p>
+                    </div>
+                    <div class="contact-card card-hover-effect glow-on-hover">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>mashiat330@gmail.com</p>
+                    </div>
+                    <div class="contact-card card-hover-effect glow-on-hover">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Location</h3>
+                        <p>Badda, Dhaka, BD</p>
+                    </div>
+                    <div class="contact-card card-hover-effect glow-on-hover">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/nadia-mashiat" target="_blank" class="rise-underline">nadia-mashiat</a></p>
+                    </div>
+                </div>
+                <div class="contact-form card-hover-effect">
+                    <form id="contactForm" action="https://formspree.io/f/your-formspree-id" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-pulse">Send Message</button>
+                        <div id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Nadia Mashiat. All Rights Reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nadia-mashiat" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/nadia-mashiat" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/nadia.mashiat" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Section --> <!------- Do not touch this section, it is for the animations and effects -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 3D Tilt effect for cards
+            function setupTiltEffect() {
+                const tiltElements = document.querySelectorAll('.tilt-effect');
+                
+                tiltElements.forEach(element => {
+                    element.addEventListener('mousemove', function(e) {
+                        const inner = this.querySelector('.tilt-effect-inner');
+                        if (!inner) return;
+                        
+                        const rect = this.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const y = e.clientY - rect.top;
+                        
+                        const xPercent = (x / rect.width - 0.5) * 20;
+                        const yPercent = (y / rect.height - 0.5) * 20;
+                        
+                        inner.style.transform = `rotateY(${xPercent}deg) rotateX(${-yPercent}deg) translateZ(20px)`;
+                    });
+                    
+                    element.addEventListener('mouseleave', function() {
+                        const inner = this.querySelector('.tilt-effect-inner');
+                        if (inner) {
+                            inner.style.transform = 'rotateY(0deg) rotateX(0deg) translateZ(0)';
+                        }
+                    });
+                });
+            }
+            
+            setupTiltEffect();
+            
+            // Setup tilt effect for hero buttons
+            function setupButtonTiltEffect() {
+                const buttons = document.querySelectorAll('.hero-btns .tilt-effect');
+                
+                buttons.forEach(button => {
+                    button.addEventListener('mousemove', function(e) {
+                        const rect = this.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const y = e.clientY - rect.top;
+                        
+                        const xPercent = (x / rect.width - 0.5) * 10; // Less rotation than cards
+                        const yPercent = (y / rect.height - 0.5) * 10;
+                        
+                        this.style.transform = `perspective(1000px) rotateY(${xPercent}deg) rotateX(${-yPercent}deg) scale(1.05) translateY(-5px)`;
+                    });
+                    
+                    button.addEventListener('mouseleave', function() {
+                        this.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1) translateY(0)';
+                    });
+                });
+            }
+            
+            setupButtonTiltEffect();
+            
+            // Intersection Observer for staggered animations
+            const observerOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.stagger-fade-in').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Theme selector functionality
+            const themeSelect = document.getElementById('themeSelect');
+            
+            // Set theme from localStorage if available
+            const savedTheme = localStorage.getItem('portfolioTheme');
+            if (savedTheme) {
+                document.body.className = savedTheme;
+                themeSelect.value = savedTheme;
+            }
+            
+            // Handle theme change
+            themeSelect.addEventListener('change', function() {
+                const selectedTheme = this.value;
+                document.body.className = selectedTheme;
+                localStorage.setItem('portfolioTheme', selectedTheme);
+            });
+            
+            // Mobile menu toggle
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    this.classList.toggle('open');
+                });
+            }
+            
+            // Add scroll class to header on scroll
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu when link is clicked
+                        if (navLinks && navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            if (menuBtn) menuBtn.classList.remove('open');
+                        }
+                    }
+                });
+            });
+            
+            // Simple form submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! As this is a static site, the form cannot be submitted directly.');
+                    this.reset();
+                });
+            }
+
+            // Add active class to nav items on scroll
+            function setActiveNav() {
+                const sections = document.querySelectorAll('section');
+                const navItems = document.querySelectorAll('.nav-links a');
+                
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === `#${current}`) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', setActiveNav);
+            
+            // Scroll to top button
+            const scrollTopBtn = document.createElement('button');
+            scrollTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            scrollTopBtn.classList.add('scroll-top-btn');
+            document.body.appendChild(scrollTopBtn);
+            
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    scrollTopBtn.classList.add('show');
+                } else {
+                    scrollTopBtn.classList.remove('show');
+                }
+            });
+            
+            // Add CSS for scroll to top button
+            const scrollTopStyle = document.createElement('style');
+            scrollTopStyle.textContent = `
+                .scroll-top-btn {
+                    position: fixed;
+                    bottom: 30px;
+                    right: 30px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: var(--primary-color);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.4);
+                    z-index: 100;
+                }
+                
+                .scroll-top-btn.show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                
+                .scroll-top-btn:hover {
+                    background-color: var(--primary-dark);
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.6);
+                }
+            `;
+            document.head.appendChild(scrollTopStyle);
+            
+            // Intersection Observer for scroll animations
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.edu-card, .timeline-content, .project-card, .training-card, .contact-card');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            };
+            
+            // Add fade-in class with CSS
+            const fadeStyle = document.createElement('style');
+            fadeStyle.textContent = `
+                .edu-card, .timeline-content, .project-card, .training-card, .contact-card {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: opacity 0.5s ease, transform 0.5s ease;
+                }
+                
+                .fade-in {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            `;
+            document.head.appendChild(fadeStyle);
+            
+            // Add animated background particles
+            const particlesContainer = document.createElement('div');
+            particlesContainer.id = 'particles';
+            document.body.appendChild(particlesContainer);
+            
+            const particlesStyle = document.createElement('style');
+            particlesStyle.textContent = `
+                #particles {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    pointer-events: none;
+                }
+                
+                .particle {
+                    position: absolute;
+                    border-radius: 50%;
+                    background-color: rgba(var(--primary-rgb), 0.2);
+                    pointer-events: none;
+                }
+            `;
+            document.head.appendChild(particlesStyle);
+            
+            // Create particles
+            function createParticles() {
+                const particlesCount = 20;
+                const container = document.getElementById('particles');
+                
+                for (let i = 0; i < particlesCount; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+                    
+                    // Random size between 3 and 8 pixels
+                    const size = Math.random() * 5 + 3;
+                    
+                    // Random position
+                    const posX = Math.random() * 100;
+                    const posY = Math.random() * 100;
+                    
+                    // Random animation duration between 10 and 25 seconds
+                    const duration = Math.random() * 15 + 10;
+                    
+                    // Random opacity between 0.1 and 0.3
+                    const opacity = Math.random() * 0.2 + 0.1;
+                    
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    particle.style.left = `${posX}%`;
+                    particle.style.top = `${posY}%`;
+                    particle.style.opacity = opacity;
+                    particle.style.animation = `float ${duration}s infinite ease-in-out`;
+                    
+                    container.appendChild(particle);
+                }
+            }
+            
+            createParticles();
+            
+            // Run fade animations on load and scroll
+            window.addEventListener('load', animateOnScroll);
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,368 @@
+/* 
+* Portfolio - Advanced Animations CSS
+* Add-on for the portfolio with more advanced animations
+*/
+
+/* Card Hover Effects */
+.card-hover-effect {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 3D Tilt Effect */
+.tilt-effect {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.tilt-effect-inner {
+    transition: transform 0.5s ease;
+    transform: translateZ(0);
+}
+
+/* Make tilt effect work directly on buttons without inner elements */
+.btn.tilt-effect {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s ease;
+}
+
+.btn.tilt-effect:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(var(--primary-rgb), 0.3);
+}
+
+/* Glow Effects */
+.glow-on-hover {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.glow-on-hover::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, 
+        rgba(var(--primary-rgb), 0.5),
+        rgba(var(--primary-rgb), 0),
+        rgba(var(--accent-rgb), 0.5),
+        rgba(var(--primary-rgb), 0),
+        rgba(var(--primary-rgb), 0.5)
+    );
+    z-index: -1;
+    border-radius: calc(var(--border-radius) + 5px);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.glow-on-hover:hover::before {
+    opacity: 1;
+    animation: glowing 3s linear infinite;
+}
+
+/* Enhanced glow effect that matches the image */
+.edu-card.glow-on-hover,
+.contact-card.glow-on-hover,
+.project-card.glow-on-hover,
+.training-card.glow-on-hover,
+.timeline-content.glow-on-hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.3)
+    );
+}
+
+.edu-card.glow-on-hover::after,
+.contact-card.glow-on-hover::after,
+.project-card.glow-on-hover::after,
+.training-card.glow-on-hover::after,
+.timeline-content.glow-on-hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(var(--primary-rgb), 0.1) 0%, 
+        rgba(var(--accent-rgb), 0.1) 50%, 
+        rgba(var(--primary-rgb), 0.1) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: var(--border-radius);
+    z-index: -1;
+}
+
+.edu-card.glow-on-hover:hover,
+.contact-card.glow-on-hover:hover,
+.project-card.glow-on-hover:hover,
+.training-card.glow-on-hover:hover,
+.timeline-content.glow-on-hover:hover {
+    box-shadow: 
+        0 10px 30px rgba(var(--primary-rgb), 0.2),
+        0 0 20px rgba(var(--accent-rgb), 0.2);
+}
+
+.edu-card.glow-on-hover:hover::after,
+.contact-card.glow-on-hover:hover::after,
+.project-card.glow-on-hover:hover::after,
+.training-card.glow-on-hover:hover::after,
+.timeline-content.glow-on-hover:hover::after {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 400% 0%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Text Animation */
+.text-wave span {
+    display: inline-block;
+    animation: wave-text 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--item-index));
+}
+
+@keyframes wave-text {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Rising underline */
+.rise-underline {
+    position: relative;
+}
+
+.rise-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.rise-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Image Hover Effects */
+.img-hover-zoom {
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.img-hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Staggered Animations */
+.stagger-fade-in > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.stagger-fade-in.animate > *:nth-child(1) { 
+    animation: staggerFade 0.5s 0.1s forwards; 
+}
+.stagger-fade-in.animate > *:nth-child(2) { 
+    animation: staggerFade 0.5s 0.2s forwards; 
+}
+.stagger-fade-in.animate > *:nth-child(3) { 
+    animation: staggerFade 0.5s 0.3s forwards; 
+}
+.stagger-fade-in.animate > *:nth-child(4) { 
+    animation: staggerFade 0.5s 0.4s forwards; 
+}
+.stagger-fade-in.animate > *:nth-child(5) { 
+    animation: staggerFade 0.5s 0.5s forwards; 
+}
+.stagger-fade-in.animate > *:nth-child(6) { 
+    animation: staggerFade 0.5s 0.6s forwards; 
+}
+
+@keyframes staggerFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rotate animation */
+.rotate-on-hover {
+    transition: transform 0.5s ease;
+}
+
+.rotate-on-hover:hover {
+    transform: rotate(5deg);
+}
+
+/* Button hover effects */
+.btn-pulse {
+    animation: button-pulse 2s infinite;
+}
+
+@keyframes button-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(var(--primary-rgb), 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0);
+    }
+}
+
+/* Shiny button effect */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    transition: transform 0.5s;
+}
+
+.btn-shine:hover::after {
+    transform: translate(50%, 100%) rotate(30deg);
+}
+
+/* Slide-in heading */
+.slide-in-heading {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in-heading .highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    animation: slideInFadeUp 4s forwards;
+}
+
+.slide-in-heading .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 8px;
+    background-color: var(--accent-color);
+    z-index: -1;
+    animation: highlightSlideIn 1.5s 0.5s forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes slideInFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes highlightSlideIn {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* Hero buttons with tilt effect */
+.hero-btns .tilt-effect {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+}
+
+.hero-btns .tilt-effect:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(var(--primary-rgb), 0.3);
+}
+
+.hero-btns .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.hero-btns .btn-primary:hover {
+    background-color: var(--primary-dark) !important;
+    color: white;
+}
+
+.hero-btns .btn-secondary:hover {
+    color: white;
+}
+
+/* Add glow effect to buttons */
+.btn.tilt-effect::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        rgba(var(--primary-rgb), 0.3),
+        rgba(var(--primary-rgb), 0),
+        rgba(var(--accent-rgb), 0.3),
+        rgba(var(--primary-rgb), 0),
+        rgba(var(--primary-rgb), 0.3)
+    );
+    z-index: -1;
+    border-radius: calc(var(--border-radius) + 2px);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.btn.tilt-effect:hover::before {
+    opacity: 1;
+    animation: glowing 3s linear infinite;
+} 

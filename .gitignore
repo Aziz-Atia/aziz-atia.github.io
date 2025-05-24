@@ -1,0 +1,26 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Build results
+dist/
+tmp/
+out-tsc/
+# Only exists if Bazel was run
+/bazel-out 
