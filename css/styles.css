@@ -439,6 +439,37 @@ nav {
     margin-bottom: 8px;
 }
 
+/* Make education cards fully clickable */
+.edu-card.clickable-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.edu-card.clickable-card:hover {
+    text-decoration: none;
+    color: inherit;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(var(--primary-rgb), 0.2);
+}
+
+.edu-card.clickable-card h3 {
+    color: var(--primary-color);
+}
+
+.edu-card.clickable-card:hover h3 {
+    color: var(--primary-color);
+}
+
+.edu-card.clickable-card p {
+    color: var(--gray-color);
+}
+
+.edu-card.clickable-card:hover p {
+    color: var(--gray-color);
+}
+
 /* ===== Timeline ===== */
 .timeline {
     position: relative;
